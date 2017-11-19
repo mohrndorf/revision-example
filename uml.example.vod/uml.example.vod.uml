@@ -12,11 +12,11 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_ZGN98Mq2EeeL3sF1B1FfTQ" name="play"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aALr0Mq2EeeL3sF1B1FfTQ" name="stream"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_bMwzsMq2EeeL3sF1B1FfTQ" name="stop"/>
-    <ownedOperation xmi:type="uml:Operation" xmi:id="_cfBs0Mq2EeeL3sF1B1FfTQ" name="disconnect"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_VPeV4Mq2EeeL3sF1B1FfTQ" name="User"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_WAgKMMq2EeeL3sF1B1FfTQ" name="Server">
     <ownedOperation xmi:type="uml:Operation" xmi:id="_eOsToMq2EeeL3sF1B1FfTQ" name="connect"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_cfBs0Mq2EeeL3sF1B1FfTQ" name="disconnect"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_Wpfc0Mq2EeeL3sF1B1FfTQ" name="VoD"/>
   <packagedElement xmi:type="uml:Association" xmi:id="_1S8SYMq2EeeL3sF1B1FfTQ" memberEnd="_1TBx8Mq2EeeL3sF1B1FfTQ _1TH4kMq2EeeL3sF1B1FfTQ" navigableOwnedEnd="_1TBx8Mq2EeeL3sF1B1FfTQ">
