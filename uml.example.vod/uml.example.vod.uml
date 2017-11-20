@@ -13,45 +13,47 @@
     <ownedOperation xmi:type="uml:Operation" xmi:id="_aALr0Mq2EeeL3sF1B1FfTQ" name="stream"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_bMwzsMq2EeeL3sF1B1FfTQ" name="stop"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_VPeV4Mq2EeeL3sF1B1FfTQ" name="User"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VPeV4Mq2EeeL3sF1B1FfTQ" name="User">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_1TBx8Mq2EeeL3sF1B1FfTQ" name="open" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_1S8SYMq2EeeL3sF1B1FfTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1TGDYMq2EeeL3sF1B1FfTQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1TGqcMq2EeeL3sF1B1FfTQ" value="4"/>
+    </ownedAttribute>
+  </packagedElement>
   <packagedElement xmi:type="uml:Class" xmi:id="_WAgKMMq2EeeL3sF1B1FfTQ" name="Server">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QvUvAcq3EeeL3sF1B1FfTQ" name="video" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_QvSSwMq3EeeL3sF1B1FfTQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_b6Un0sq3EeeL3sF1B1FfTQ" name="video" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_b6TZsMq3EeeL3sF1B1FfTQ"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_eOsToMq2EeeL3sF1B1FfTQ" name="connect"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_cfBs0Mq2EeeL3sF1B1FfTQ" name="disconnect"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_Wpfc0Mq2EeeL3sF1B1FfTQ" name="VoD"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_1S8SYMq2EeeL3sF1B1FfTQ" memberEnd="_1TBx8Mq2EeeL3sF1B1FfTQ _1TH4kMq2EeeL3sF1B1FfTQ" navigableOwnedEnd="_1TBx8Mq2EeeL3sF1B1FfTQ">
+  <packagedElement xmi:type="uml:Class" xmi:id="_Wpfc0Mq2EeeL3sF1B1FfTQ" name="VoD">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_EGatwsq3EeeL3sF1B1FfTQ" name="online" type="_VPeV4Mq2EeeL3sF1B1FfTQ" association="_EGZfoMq3EeeL3sF1B1FfTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGbU0Mq3EeeL3sF1B1FfTQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGbU0cq3EeeL3sF1B1FfTQ" value="*"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1S8SYMq2EeeL3sF1B1FfTQ" memberEnd="_1TBx8Mq2EeeL3sF1B1FfTQ _1TH4kMq2EeeL3sF1B1FfTQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1S-uoMq2EeeL3sF1B1FfTQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1S_VsMq2EeeL3sF1B1FfTQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_1TH4kMq2EeeL3sF1B1FfTQ" name="user" type="_VPeV4Mq2EeeL3sF1B1FfTQ" association="_1S8SYMq2EeeL3sF1B1FfTQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_1TBx8Mq2EeeL3sF1B1FfTQ" name="open" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_1S8SYMq2EeeL3sF1B1FfTQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1TGDYMq2EeeL3sF1B1FfTQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1TGqcMq2EeeL3sF1B1FfTQ" value="4"/>
-    </ownedEnd>
   </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_EGZfoMq3EeeL3sF1B1FfTQ" memberEnd="_EGatwsq3EeeL3sF1B1FfTQ _EGbU0sq3EeeL3sF1B1FfTQ" navigableOwnedEnd="_EGatwsq3EeeL3sF1B1FfTQ">
+  <packagedElement xmi:type="uml:Association" xmi:id="_EGZfoMq3EeeL3sF1B1FfTQ" memberEnd="_EGatwsq3EeeL3sF1B1FfTQ _EGbU0sq3EeeL3sF1B1FfTQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EGatwMq3EeeL3sF1B1FfTQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EGatwcq3EeeL3sF1B1FfTQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_EGbU0sq3EeeL3sF1B1FfTQ" name="vod" type="_Wpfc0Mq2EeeL3sF1B1FfTQ" association="_EGZfoMq3EeeL3sF1B1FfTQ"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_EGatwsq3EeeL3sF1B1FfTQ" name="online" type="_VPeV4Mq2EeeL3sF1B1FfTQ" association="_EGZfoMq3EeeL3sF1B1FfTQ">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EGbU0Mq3EeeL3sF1B1FfTQ"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EGbU0cq3EeeL3sF1B1FfTQ" value="*"/>
-    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_QvSSwMq3EeeL3sF1B1FfTQ" memberEnd="_QvUH8cq3EeeL3sF1B1FfTQ _QvUvAcq3EeeL3sF1B1FfTQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QvTg4Mq3EeeL3sF1B1FfTQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QvUH8Mq3EeeL3sF1B1FfTQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_QvUvAcq3EeeL3sF1B1FfTQ" name="video" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_QvSSwMq3EeeL3sF1B1FfTQ"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_b6TZsMq3EeeL3sF1B1FfTQ" memberEnd="_b6UAwsq3EeeL3sF1B1FfTQ _b6Un0sq3EeeL3sF1B1FfTQ">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_b6UAwMq3EeeL3sF1B1FfTQ" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_b6UAwcq3EeeL3sF1B1FfTQ" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_b6Un0sq3EeeL3sF1B1FfTQ" name="video" type="_RAjeYMq2EeeL3sF1B1FfTQ" association="_b6TZsMq3EeeL3sF1B1FfTQ"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Interaction" xmi:id="_pldiIMq3EeeL3sF1B1FfTQ" name="Interaction1">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_pldiIMq3EeeL3sF1B1FfTQ" name="ConnectionSzenario">
     <lifeline xmi:type="uml:Lifeline" xmi:id="_rLlLYMq3EeeL3sF1B1FfTQ" name="online" represents="_EGatwsq3EeeL3sF1B1FfTQ" coveredBy="_Cla_oMq4EeeL3sF1B1FfTQ _PVOTEMq4EeeL3sF1B1FfTQ _Q96vMMq4EeeL3sF1B1FfTQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_sSyrEMq3EeeL3sF1B1FfTQ" name="open" represents="_1TBx8Mq2EeeL3sF1B1FfTQ" coveredBy="_ClbmsMq4EeeL3sF1B1FfTQ _EcAt0Mq4EeeL3sF1B1FfTQ _GJ5zAMq4EeeL3sF1B1FfTQ _oxMXIMq4EeeL3sF1B1FfTQ _PVO6IMq4EeeL3sF1B1FfTQ _Q96vMcq4EeeL3sF1B1FfTQ"/>
     <lifeline xmi:type="uml:Lifeline" xmi:id="_tAkXEMq3EeeL3sF1B1FfTQ" name="main" represents="_QvUH8cq3EeeL3sF1B1FfTQ" coveredBy="_EcBU4Mq4EeeL3sF1B1FfTQ"/>
