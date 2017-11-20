@@ -352,6 +352,7 @@
       <owner xmi:type="uml:Model" href="uml.example.vod.uml#_ne6tYMqsEeeL3sF1B1FfTQ"/>
     </styles>
     <styles xmi:type="notation:DoubleValueStyle" xmi:id="_Mu7mQMq4EeeL3sF1B1FfTQ" name="rulergrid.gridspacing" doubleValue="5.0"/>
+    <styles xmi:type="notation:BooleanValueStyle" xmi:id="_JxOfIM4SEee5kcyAeTXp2Q" name="rulergrid.viewgrid"/>
     <element xmi:type="uml:Interaction" href="uml.example.vod.uml#_pldiIMq3EeeL3sF1B1FfTQ"/>
     <edges xmi:type="notation:Connector" xmi:id="_CljigMq4EeeL3sF1B1FfTQ" type="Message_AsynchEdge" source="_rLo1wMq3EeeL3sF1B1FfTQ" target="_sS28gMq3EeeL3sF1B1FfTQ">
       <children xmi:type="notation:DecorationNode" xmi:id="_Cljig8q4EeeL3sF1B1FfTQ" type="Message_AsynchNameLabel">
