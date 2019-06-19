@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <notation:Diagram xmi:id="_ios3UJJxEemONpO-Ugy--g" type="PapyrusUMLClassDiagram" name="Class Diagram" measurementUnit="Pixel">
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_ios3UZJxEemONpO-Ugy--g" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_ios3UpJxEemONpO-Ugy--g"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_ios3U5JxEemONpO-Ugy--g" diagramKindId="org.eclipse.papyrus.uml.diagram.class">
+      <owner xmi:type="uml:Model" href="uml.example.developer.uml#_ioO9QJJxEemONpO-Ugy--g"/>
+    </styles>
+    <element xmi:type="uml:Model" href="uml.example.developer.uml#_ioO9QJJxEemONpO-Ugy--g"/>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_e1-dgJJ6EemFxK_ZGk2R1w" type="PapyrusUMLStateMachineDiagram" name="State Machine Diagram" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_e1-dgZJ6EemFxK_ZGk2R1w" type="StateMachine_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_e1-dgpJ6EemFxK_ZGk2R1w" type="StateMachine_NameLabel">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e1-dg5J6EemFxK_ZGk2R1w" width="700" height="20"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_e1-dhJJ6EemFxK_ZGk2R1w" type="StateMachine_RegionCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_e1-dhZJ6EemFxK_ZGk2R1w" type="Region_Shape">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_e1-dhpJ6EemFxK_ZGk2R1w" source="RegionAnnotationKey">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_e1-dh5J6EemFxK_ZGk2R1w" key="RegionZoneKey" value=""/>
+          </eAnnotations>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_e1-diJJ6EemFxK_ZGk2R1w" type="Region_SubvertexCompartment">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e1-diZJ6EemFxK_ZGk2R1w"/>
+          </children>
+          <element xmi:type="uml:Region" href="uml.example.developer.uml#_e18oUJJ6EemFxK_ZGk2R1w"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e1-dipJ6EemFxK_ZGk2R1w" width="700" height="280"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e1-di5J6EemFxK_ZGk2R1w" y="20" width="700" height="280"/>
+      </children>
+      <element xmi:type="uml:StateMachine" href="uml.example.developer.uml#_c38qkJJ6EemFxK_ZGk2R1w"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_e1-djJJ6EemFxK_ZGk2R1w" x="30" y="30" width="700" height="300"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_e1-djZJ6EemFxK_ZGk2R1w" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_e1-djpJ6EemFxK_ZGk2R1w"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_e1-dj5J6EemFxK_ZGk2R1w" diagramKindId="org.eclipse.papyrus.uml.diagram.stateMachine">
+      <owner xmi:type="uml:Model" href="uml.example.developer.uml#_ioO9QJJxEemONpO-Ugy--g"/>
+    </styles>
+    <element xmi:type="uml:StateMachine" href="uml.example.developer.uml#_c38qkJJ6EemFxK_ZGk2R1w"/>
+  </notation:Diagram>
+</xmi:XMI>
