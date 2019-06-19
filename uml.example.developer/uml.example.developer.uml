@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ioO9QJJxEemONpO-Ugy--g" name="uml">
-  <packageImport xmi:type="uml:PackageImport" xmi:id="_ivxIoJJxEemONpO-Ugy--g">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ioO9QJJxEemONpO-Ugy--g" name="developer.model">
+  <packageImport xmi:id="_ivxIoJJxEemONpO-Ugy--g">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:StateMachine" xmi:id="_c38qkJJ6EemFxK_ZGk2R1w" name="StateMachine2">
-    <region xmi:type="uml:Region" xmi:id="_e18oUJJ6EemFxK_ZGk2R1w" name="Region1"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_c38qkJJ6EemFxK_ZGk2R1w" name="DeveloperLife">
+    <region xmi:id="_e18oUJJ6EemFxK_ZGk2R1w" name="Region1">
+      <transition xmi:id="_R2RTkJJ_Eem9H9REQEYgvQ" name="transitionCodeEat" source="_AaTL8JJ_Eem9H9REQEYgvQ" target="_8EMuYJJ-Eem9H9REQEYgvQ">
+        <trigger xmi:id="_-NHQwJKAEem9H9REQEYgvQ" name="recoverTrigger" event="_8R2d8JKAEem9H9REQEYgvQ"/>
+      </transition>
+      <transition xmi:id="_IfAagJKFEem9H9REQEYgvQ" name="transitionEatSleep" source="_8EMuYJJ-Eem9H9REQEYgvQ" target="_D7Xe8JJ_Eem9H9REQEYgvQ">
+        <trigger xmi:id="_Rn4qkJKFEem9H9REQEYgvQ" name="recoverTrigger" event="_8R2d8JKAEem9H9REQEYgvQ"/>
+      </transition>
+      <subvertex xmi:type="uml:State" xmi:id="_8EMuYJJ-Eem9H9REQEYgvQ" name="Eat"/>
+      <subvertex xmi:type="uml:State" xmi:id="_AaTL8JJ_Eem9H9REQEYgvQ" name="Code"/>
+      <subvertex xmi:type="uml:State" xmi:id="_D7Xe8JJ_Eem9H9REQEYgvQ" name="Sleep"/>
+    </region>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_dw7EgJJ7EemFxK_ZGk2R1w" name="Developer">
+    <ownedOperation xmi:id="_4KwfAJJ7EemFxK_ZGk2R1w" name="recover"/>
+    <ownedOperation xmi:id="_vK510JKAEem9H9REQEYgvQ" name="recover"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_8R2d8JKAEem9H9REQEYgvQ" name="recoverCallEvent" operation="_vK510JKAEem9H9REQEYgvQ"/>
 </uml:Model>
