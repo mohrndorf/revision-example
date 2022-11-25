@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated dfamodel -->
+      <package
+            uri="http://www.example.org/dfamodel"
+            class="example.deterministic.finite.automaton.model.dfamodel.DFAModelPackage"
+            genModel="model/dfamodel.genmodel"/>
+   </extension>
+
+</plugin>

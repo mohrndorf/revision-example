@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rSddQGzXEe2tzbAVMF1ygg" name="Delete: DFAInResource[contents]" description="Delete: DFAInResource[contents]">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rSddQWzXEe2tzbAVMF1ygg" name="Delete: DFAInResource[contents]" subUnits="_rSddRGzXEe2tzbAVMF1ygg">
+    <parameters xmi:id="_rSddQmzXEe2tzbAVMF1ygg" name="oldDFA" kind="IN"/>
+    <parameterMappings xmi:id="_rSddQ2zXEe2tzbAVMF1ygg" source="_rSddQmzXEe2tzbAVMF1ygg" target="_rSddRWzXEe2tzbAVMF1ygg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rSddRGzXEe2tzbAVMF1ygg" name="Delete: DFAInResource[contents]">
+    <parameters xmi:id="_rSddRWzXEe2tzbAVMF1ygg" name="oldDFA" kind="IN"/>
+    <lhs xmi:id="_rSddRmzXEe2tzbAVMF1ygg" name="Lhs">
+      <nodes xmi:id="_rSddR2zXEe2tzbAVMF1ygg" name="oldDFA">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+    </lhs>
+  </units>
+</henshin:Module>

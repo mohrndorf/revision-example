@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rSiVwGzXEe2tzbAVMF1ygg" name="Create: TransitionInDFA[transitions]" description="Create: TransitionInDFA[transitions]">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rSiVwWzXEe2tzbAVMF1ygg" name="Create: TransitionInDFA[transitions]" subUnits="_rSiVxGzXEe2tzbAVMF1ygg">
+    <parameters xmi:id="_rSiVwmzXEe2tzbAVMF1ygg" name="toDFA" kind="IN"/>
+    <parameterMappings xmi:id="_rSiVw2zXEe2tzbAVMF1ygg" source="_rSiVwmzXEe2tzbAVMF1ygg" target="_rSiVxWzXEe2tzbAVMF1ygg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rSiVxGzXEe2tzbAVMF1ygg" name="Create: TransitionInDFA[transitions]">
+    <parameters xmi:id="_rSiVxWzXEe2tzbAVMF1ygg" name="toDFA" kind="IN"/>
+    <lhs xmi:id="_rSiVxmzXEe2tzbAVMF1ygg" name="Lhs">
+      <nodes xmi:id="_rSiVx2zXEe2tzbAVMF1ygg" name="toDFA">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+    </lhs>
+    <rhs xmi:id="_rSiVyGzXEe2tzbAVMF1ygg" name="Rhs">
+      <nodes xmi:id="_rSiVyWzXEe2tzbAVMF1ygg" name="toDFA" outgoing="_rSiVy2zXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+      <nodes xmi:id="_rSiVymzXEe2tzbAVMF1ygg" name="newTransition" incoming="_rSiVy2zXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+      <edges xmi:id="_rSiVy2zXEe2tzbAVMF1ygg" source="_rSiVyWzXEe2tzbAVMF1ygg" target="_rSiVymzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//DFA/transitions"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_rSiVzGzXEe2tzbAVMF1ygg" origin="_rSiVx2zXEe2tzbAVMF1ygg" image="_rSiVyWzXEe2tzbAVMF1ygg"/>
+  </units>
+</henshin:Module>

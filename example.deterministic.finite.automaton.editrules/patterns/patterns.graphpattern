@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ASCII"?>
+<graphpattern:Bundle xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:graphpattern="http://www.sidiff.org/graphpattern/1.0" xmi:id="_pXzucGzXEe2tzbAVMF1ygg" name="DFAModel" description="Document Type: http://www.example.org/dfamodel">
+  <patterns xmi:id="_pXzucWzXEe2tzbAVMF1ygg" name="aDFANeedsAtLeastOneState" description="A DFA needs at least one state.">
+    <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <patterns xmi:id="_pXzucmzXEe2tzbAVMF1ygg" name="DFAInResource[contents]" description="The ASG pattern with the context node DFA which is contained by Resource.">
+      <graphs xmi:id="_pXzuc2zXEe2tzbAVMF1ygg" name="DFAInResource[contents]">
+        <nodes xmi:id="_pXzudGzXEe2tzbAVMF1ygg" name="resource">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#exists"/>
+          <outgoings xmi:id="_pXzudWzXEe2tzbAVMF1ygg" target="_pXzudmzXEe2tzbAVMF1ygg">
+            <type href="http://www.sidiff.org/graphpattern/1.0#//Resource/contents"/>
+          </outgoings>
+          <type href="http://www.sidiff.org/graphpattern/1.0#//Resource"/>
+        </nodes>
+        <nodes xmi:id="_pXzudmzXEe2tzbAVMF1ygg" name="dFA" incomings="_pXzudWzXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//DFA"/>
+        </nodes>
+      </graphs>
+    </patterns>
+  </patterns>
+  <patterns xmi:id="_pXzud2zXEe2tzbAVMF1ygg" name="exactlyOneStateMustBeAnInitialState" description="Exactly one state must be an initial state (isStart == true).">
+    <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <patterns xmi:id="_pXzueGzXEe2tzbAVMF1ygg" name="DFAInResource[contents]" description="The ASG pattern with the context node DFA which is contained by Resource.">
+      <graphs xmi:id="_pXzueWzXEe2tzbAVMF1ygg" name="DFAInResource[contents]">
+        <nodes xmi:id="_pXzuemzXEe2tzbAVMF1ygg" name="resource">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#exists"/>
+          <outgoings xmi:id="_pXzue2zXEe2tzbAVMF1ygg" target="_pXzufGzXEe2tzbAVMF1ygg">
+            <type href="http://www.sidiff.org/graphpattern/1.0#//Resource/contents"/>
+          </outgoings>
+          <type href="http://www.sidiff.org/graphpattern/1.0#//Resource"/>
+        </nodes>
+        <nodes xmi:id="_pXzufGzXEe2tzbAVMF1ygg" name="dFA" incomings="_pXzue2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//DFA"/>
+        </nodes>
+      </graphs>
+    </patterns>
+  </patterns>
+  <patterns xmi:id="_pXzufWzXEe2tzbAVMF1ygg" name="thereMustBeAtLeastOneFinalState" description="There must be at least one final state (isEnd == true)">
+    <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <patterns xmi:id="_pXzufmzXEe2tzbAVMF1ygg" name="DFAInResource[contents]" description="The ASG pattern with the context node DFA which is contained by Resource.">
+      <graphs xmi:id="_pXzuf2zXEe2tzbAVMF1ygg" name="DFAInResource[contents]">
+        <nodes xmi:id="_pXzugGzXEe2tzbAVMF1ygg" name="resource">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#exists"/>
+          <outgoings xmi:id="_pXzugWzXEe2tzbAVMF1ygg" target="_pXzugmzXEe2tzbAVMF1ygg">
+            <type href="http://www.sidiff.org/graphpattern/1.0#//Resource/contents"/>
+          </outgoings>
+          <type href="http://www.sidiff.org/graphpattern/1.0#//Resource"/>
+        </nodes>
+        <nodes xmi:id="_pXzugmzXEe2tzbAVMF1ygg" name="dFA" incomings="_pXzugWzXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//DFA"/>
+        </nodes>
+      </graphs>
+    </patterns>
+  </patterns>
+  <patterns xmi:id="_pXzug2zXEe2tzbAVMF1ygg" name="transitionsMustBeLabeled" description="Transitions must be labeled (not empty or null)">
+    <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#constraint"/>
+    <patterns xmi:id="_pXzuhGzXEe2tzbAVMF1ygg" name="TransitionInDFA[transitions]" description="The ASG pattern with the context node Transition which is contained by DFA.">
+      <graphs xmi:id="_pXzuhWzXEe2tzbAVMF1ygg" name="TransitionInDFA[transitions]">
+        <nodes xmi:id="_pXzuhmzXEe2tzbAVMF1ygg" name="dFA">
+          <stereotypes href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#exists"/>
+          <outgoings xmi:id="_pXzuh2zXEe2tzbAVMF1ygg" target="_pXzuiGzXEe2tzbAVMF1ygg">
+            <type href="http://www.example.org/dfamodel#//DFA/transitions"/>
+          </outgoings>
+          <type href="http://www.example.org/dfamodel#//DFA"/>
+        </nodes>
+        <nodes xmi:id="_pXzuiGzXEe2tzbAVMF1ygg" name="transition" incomings="_pXzuh2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//Transition"/>
+        </nodes>
+      </graphs>
+    </patterns>
+  </patterns>
+  <patterns xmi:id="_qhBZQGzXEe2tzbAVMF1ygg" name="RELOCATION_EDGES">
+    <graphs xmi:id="_qhCnYGzXEe2tzbAVMF1ygg" name="[ : DFA] - states -> [ : State]">
+      <nodes xmi:id="_qhCnYWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCnYmzXEe2tzbAVMF1ygg" target="_qhCnY2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//DFA/states"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+      <nodes xmi:id="_qhCnY2zXEe2tzbAVMF1ygg" incomings="_qhCnYmzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//State"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_qhCnZGzXEe2tzbAVMF1ygg" name="[ : DFA] - transitions -> [ : Transition]">
+      <nodes xmi:id="_qhCnZWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCnZmzXEe2tzbAVMF1ygg" target="_qhCnZ2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//DFA/transitions"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+      <nodes xmi:id="_qhCnZ2zXEe2tzbAVMF1ygg" incomings="_qhCnZmzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_qhCnaGzXEe2tzbAVMF1ygg" name="[ : Transition] - from -> [ : State]">
+      <nodes xmi:id="_qhCnaWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCnamzXEe2tzbAVMF1ygg" target="_qhCna2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//Transition/from"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+      <nodes xmi:id="_qhCna2zXEe2tzbAVMF1ygg" incomings="_qhCnamzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//State"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_qhCnbGzXEe2tzbAVMF1ygg" name="[ : Transition] - to -> [ : State]">
+      <nodes xmi:id="_qhCnbWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCnbmzXEe2tzbAVMF1ygg" target="_qhCnb2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//Transition/to"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+      <nodes xmi:id="_qhCnb2zXEe2tzbAVMF1ygg" incomings="_qhCnbmzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//State"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_qhCncGzXEe2tzbAVMF1ygg" name="[ : State] - outgoingTransitions -> [ : Transition]">
+      <nodes xmi:id="_qhCncWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCncmzXEe2tzbAVMF1ygg" target="_qhCnc2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//State/outgoingTransitions"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//State"/>
+      </nodes>
+      <nodes xmi:id="_qhCnc2zXEe2tzbAVMF1ygg" incomings="_qhCncmzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+    </graphs>
+    <graphs xmi:id="_qhCndGzXEe2tzbAVMF1ygg" name="[ : State] - incomingTransitions -> [ : Transition]">
+      <nodes xmi:id="_qhCndWzXEe2tzbAVMF1ygg">
+        <outgoings xmi:id="_qhCndmzXEe2tzbAVMF1ygg" target="_qhCnd2zXEe2tzbAVMF1ygg">
+          <type href="http://www.example.org/dfamodel#//State/incomingTransitions"/>
+        </outgoings>
+        <type href="http://www.example.org/dfamodel#//State"/>
+      </nodes>
+      <nodes xmi:id="_qhCnd2zXEe2tzbAVMF1ygg" incomings="_qhCndmzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+    </graphs>
+  </patterns>
+  <profiles href="graphpatternprofile:/org.sidiff.graphpattern.profile.constraints#@profile0"/>
+  <domains href="http://www.example.org/dfamodel#/"/>
+</graphpattern:Bundle>

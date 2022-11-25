@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated dfamodel -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="example.deterministic.finite.automaton.model.dfamodel.presentation.DFAModelModelWizardID"
+            name="%_UI_DFAModelModelWizard_label"
+            class="example.deterministic.finite.automaton.model.dfamodel.presentation.DFAModelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/DFAModelModelFile.gif">
+         <description>%_UI_DFAModelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated dfamodel -->
+      <editor
+            id="example.deterministic.finite.automaton.model.dfamodel.presentation.DFAModelEditorID"
+            name="%_UI_DFAModelEditor_label"
+            icon="icons/full/obj16/DFAModelModelFile.gif"
+            extensions="dfamodel"
+            class="example.deterministic.finite.automaton.model.dfamodel.presentation.DFAModelEditor"
+            contributorClass="example.deterministic.finite.automaton.model.dfamodel.presentation.DFAModelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

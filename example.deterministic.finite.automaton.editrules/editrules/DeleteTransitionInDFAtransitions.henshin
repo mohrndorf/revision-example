@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rSkyAGzXEe2tzbAVMF1ygg" name="Delete: TransitionInDFA[transitions]" description="Delete: TransitionInDFA[transitions]">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rSkyAWzXEe2tzbAVMF1ygg" name="Delete: TransitionInDFA[transitions]" subUnits="_rSkyBmzXEe2tzbAVMF1ygg">
+    <parameters xmi:id="_rSkyAmzXEe2tzbAVMF1ygg" name="fromDFA" kind="IN"/>
+    <parameters xmi:id="_rSkyA2zXEe2tzbAVMF1ygg" name="oldTransition" kind="IN"/>
+    <parameterMappings xmi:id="_rSkyBGzXEe2tzbAVMF1ygg" source="_rSkyAmzXEe2tzbAVMF1ygg" target="_rSkyB2zXEe2tzbAVMF1ygg"/>
+    <parameterMappings xmi:id="_rSkyBWzXEe2tzbAVMF1ygg" source="_rSkyA2zXEe2tzbAVMF1ygg" target="_rSkyCGzXEe2tzbAVMF1ygg"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_rSkyBmzXEe2tzbAVMF1ygg" name="Delete: TransitionInDFA[transitions]">
+    <parameters xmi:id="_rSkyB2zXEe2tzbAVMF1ygg" name="fromDFA" kind="IN"/>
+    <parameters xmi:id="_rSkyCGzXEe2tzbAVMF1ygg" name="oldTransition" kind="IN"/>
+    <lhs xmi:id="_rSkyCWzXEe2tzbAVMF1ygg" name="Lhs">
+      <nodes xmi:id="_rSkyCmzXEe2tzbAVMF1ygg" name="fromDFA" outgoing="_rSkyDGzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+      <nodes xmi:id="_rSkyC2zXEe2tzbAVMF1ygg" name="oldTransition" incoming="_rSkyDGzXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//Transition"/>
+      </nodes>
+      <edges xmi:id="_rSkyDGzXEe2tzbAVMF1ygg" source="_rSkyCmzXEe2tzbAVMF1ygg" target="_rSkyC2zXEe2tzbAVMF1ygg">
+        <type href="http://www.example.org/dfamodel#//DFA/transitions"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_rSkyDWzXEe2tzbAVMF1ygg" name="Rhs">
+      <nodes xmi:id="_rSkyDmzXEe2tzbAVMF1ygg" name="fromDFA">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+    </rhs>
+    <mappings xmi:id="_rSkyD2zXEe2tzbAVMF1ygg" origin="_rSkyCmzXEe2tzbAVMF1ygg" image="_rSkyDmzXEe2tzbAVMF1ygg"/>
+  </units>
+</henshin:Module>

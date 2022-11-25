@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_rSYkwGzXEe2tzbAVMF1ygg" name="Create: DFAInResource[contents]" description="Create: DFAInResource[contents]">
+  <units xsi:type="henshin:SequentialUnit" xmi:id="_rSZy4GzXEe2tzbAVMF1ygg" name="Create: DFAInResource[contents]" subUnits="_rSZy4WzXEe2tzbAVMF1ygg"/>
+  <units xsi:type="henshin:Rule" xmi:id="_rSZy4WzXEe2tzbAVMF1ygg" name="Create: DFAInResource[contents]">
+    <rhs xmi:id="_rSZy4mzXEe2tzbAVMF1ygg" name="Rhs">
+      <nodes xmi:id="_rSZy42zXEe2tzbAVMF1ygg" name="newDFA">
+        <type href="http://www.example.org/dfamodel#//DFA"/>
+      </nodes>
+    </rhs>
+  </units>
+</henshin:Module>

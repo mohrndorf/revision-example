@@ -1,0 +1,35 @@
+/*
+ * Constraint Library for Document Type: http://www.example.org/dfamodel
+ */
+
+domain 'http://www.example.org/dfamodel'
+
+// context DFA inv: self.states->size() > 0
+constraint aDFANeedsAtLeastOneState 
+message 'A DFA needs at least one state.' 
+context DFA dfa : isGreater(size(dfa.states), 0)
+
+// context DFA inv: self.states->select(s|s.isStart)->size() = 1
+constraint exactlyOneStateMustBeAnInitialState 
+message 'Exactly one state must be an initial state (isStart == true).'
+context DFA dfa : 
+	// it exists one state with isStart == true
+	exists(State startState in dfa.states : 
+		isEqual(startState.isStart, true) and 
+		// so that no other state is isStart == true
+		not(exists(State otherState in dfa.states : 
+			not(isEqual(startState, otherState)) and isEqual(otherState.isStart, true)
+		))
+	)
+
+// context DFA inv: self.states->select(s|s.isEnd)->size() > 0
+constraint thereMustBeAtLeastOneFinalState
+message 'There must be at least one final state (isEnd == true)'
+context DFA dfa : exists(State s in dfa.states : isEqual(s.isEnd, true)) 
+
+// context DFA inv: self.transitions->forAll(t|not t.input.oclIsUndefined() and t.input<>'')
+constraint transitionsMustBeLabeled
+message 'Transitions must be labeled (not empty or null)'
+context Transition transition : not(isEmpty(transition.input)) and not(isEqual(transition.input, ''))
+
+// TODO: Add your DFA constraints here...

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dfamodel:DFA xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dfamodel="http://www.example.org/dfamodel">
+  <states isStart="true"/>
+  <states/>
+  <states isEnd="true"/>
+  <states isStart="true"/>
+  <transitions input="HalloWelt"/>
+</dfamodel:DFA>

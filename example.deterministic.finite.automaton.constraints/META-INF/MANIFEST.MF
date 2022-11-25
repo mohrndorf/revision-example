@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: DFA Constraints
+Bundle-SymbolicName: example.deterministic.finite.automaton.constraints;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.sidiff.validation.constraint.project,
+ org.sidiff.validation.constraint.interpreter,
+ example.deterministic.finite.automaton.model
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Bundle-ActivationPolicy: lazy
+Automatic-Module-Name: example.deterministic.finite.automaton.constraints
